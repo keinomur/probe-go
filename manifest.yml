@@ -1,0 +1,10 @@
+---
+applications:
+ - name: probe-go
+   buildpack: go_buildpack
+   command: probe-go
+   host: probe-response
+   instances: 1
+   memory: 256MB
+   env:
+     GOVERSION: go1.9
